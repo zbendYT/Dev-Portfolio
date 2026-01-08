@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Code/Style.css">
+</head>
+<body>
+    <header>
+        <h1>Justine Carl E Eugenio</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About Me</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+        </nav>
+    </header>
+
+    <section id="home" class="active">
+        <h2 id="typing-text" class="typing"></h2>
+        <p>Hi! I’m Justine Carl E. Eugenio, a Grade 12 student from SHS San Nicolas III, Bacoor, Cavite, currently in the ICT 12-C section.
+I’m learning game development and basic web development, and I enjoy creating simple projects as I improve my skills.
+I like experimenting with game engines such as Godot and Roblox, and I also build basic websites using HTML and CSS.
+This portfolio showcases my projects, what I’ve learned so far, and my journey as a student developer. Welcome, and feel free to explore my site with a retro twist!</p>
+        <h2><br><br><br><br>Get in Touch</h2>
+        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=justinecarleugenio2020@gmail.com">justinecarleugenio2020@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/justinecarl.eugenio.9">facebook.com/justineugenio</a></p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://scontent.fmnl35-1.fna.fbcdn.net/v/t39.30808-1/481256611_1161154819087956_8562041313961049363_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFw-kLYjcO0-ViB6t8JqyY1NOsESOooAAM06wRI6igAA8kVXM8ojYxrWd9eK7AW0siLQkT0xV-Q5F4y_bcVMvZo&_nc_ohc=SjcpWWLiPcgQ7kNvwHYONx2&_nc_oc=AdnlhS2AAC12NQCn5lqtJr6sz6fRfEJDeHNDwRk8-9swMoRDLkKDIXlZDCiMwH8qoLk&_nc_zt=24&_nc_ht=scontent.fmnl35-1.fna&_nc_gid=JfLqIstdHuRRwlW_a48wJw&oh=00_AfoM4vcqBwKxIFaatkSun-8KdgYZwI9OIaqceQPCYqZR7w&oe=696383E7" alt="Profile Picture" class="profile-pic" onclick="showFunFact()">
+        <div class="fun-fact-box" id="fun-fact">
+        Click my picture for a fun fact! </div>
+        <p>I am a student developer who can build simple games using Godot and Roblox, and I also have basic experience in creating websites.</p>
+        <p>Interestingly, I'd like to become a mechanic, but I accidentally picked programming. Even though I liked it at the time, now I realize I'd love to become a mechanic. It's a journey of self-discovery, and I'm excited to explore both worlds!</p>
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Game Development</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 35%;"></div>
+                </div>
+                <span class="skill-percentage">35%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Creative Coding</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Basic Electrical Knowledge</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Mechanical Aptitude</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <a href="https://www.roblox.com/games/9113953010/Smiler"><img src="https://tr.rbxcdn.com/180DAY-3396556e6ae9d7f74171387584b29e83/768/432/Image/Png/noFilter" alt="Smiler"></a>
+            <h3>3d Horror Simple Escape Game</h3>
+            <p>A simple escape game where the player must find hidden keys to unlock the final door while avoiding a smiling monster that hunts them.</p>
+        </div>
+        <div class="project">
+            <a href=""><img src="https://media.istockphoto.com/id/2154317818/vector/a-construction-zone-is-marked-with-a-safety-sign-cone-and-hard-hat.jpg?s=612x612&w=0&k=20&c=gcjHJ3pGZr2EVBzM-YwkuRkD564M1BMJ88ecD4m_xmI=" alt="Leafy Learner"></a>
+            <h3>Leafy Learner</h3>
+            <p>A learning game for Grade 3 students focused on taking care of a plant. The game is currently under development.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Justine Carl E Eugenio. All rights reserved.</p>
+    </footer>
+
+    <script src="Assets/Code/Script.js"></script>
+</body>
+</html>

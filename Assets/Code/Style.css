@@ -1,0 +1,189 @@
+body {
+            font-family: 'Press Start  2P', monospace;
+            background-color: #000;
+            background-image: url(Background/AnimatedBG.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: rgba(17, 17, 17, 0.95);
+            padding: 30px;
+            border-bottom: 2px solid #fff;
+            box-shadow: 0 0 15px #fff;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+        nav a, a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 13px;
+            transition: all 0.3s;
+            text-shadow: 0 0 5px #fff;
+        }
+        a:hover, nav a:hover {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+            font-size: 15px;
+        }
+
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.452);
+            transition: opacity 0.5s;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        section.active {
+            display: block;
+            opacity: 1;
+        }
+
+
+
+        h1, h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #fff;
+        }
+
+        .typing {
+            border-right: 2px solid #fff;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
+
+        p {
+            font-size: 13px;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 20px #fff;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 25px #fff;
+        }
+
+        .project {
+            background-color: rgba(34, 34, 34, 0.95);
+            margin: 20px auto;
+            padding: 25px;
+            width: 85%;
+            max-width: 600px;
+            border: 1px solid #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 100px;
+        }
+        .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px #fff;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            font-size: 10px;
+        }
+        .skill-name {
+            flex: 1;
+            text-align: left;
+        }
+        .progress-bar {
+            flex: 3;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid #fff;
+            margin: 0 10px;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background-color: #d4d4d4;
+            box-shadow: 0 0 10px #ffffff;
+            transition: width 1s ease-in-out;
+        }
+        .skill-percentage {
+            flex: 0.5;
+            text-align: right;
+        }
+
+        footer {
+            background-color: rgba(17, 17, 17, 0.95);
+            padding: 20px;
+            border-top: 2px solid #fff;
+            box-shadow: 0 0 15px #fff;
+        }
+
+        .fun-fact-box {
+            max-width: 300px;
+            padding: 15px;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #fff;
+            text-align: left;
+            transition: opacity 0.3s;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1, h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 13px;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            .project {
+                width: 95%;
+            }
+            .skill {
+                width: 95%;
+            }
+        }
